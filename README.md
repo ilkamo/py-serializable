@@ -17,6 +17,8 @@ class Photo(Serializable):
 		('tags', list), 
 		('title', str)
 	]
+
+	def ...
 ```
 
 ##Instantiate and serialize an object
