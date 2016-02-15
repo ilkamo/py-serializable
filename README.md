@@ -26,7 +26,6 @@ Create a new object is simple. After you created its instance, you can save it i
 This is an example:
 
 ```
-import json
 from serializable import Serializable
 from ... import Photo
 
@@ -40,10 +39,6 @@ photo = Photo(
 exported_json = photo.json_me()
 #exported_json = '{"tags": ["#happy", "#smile"], "id": 12131, "service_id": "flickr", "title": "Happiness"}'
 ```
-
-exported_json = photo.json_me()
-print(exported_json)
-print(photo.service_id)
 
 ##Deserialize - instantiate an object from the exported text
 
