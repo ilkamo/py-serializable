@@ -1,4 +1,4 @@
-# serializer
+# Python object serializer
 Python serializer class (can be extended by other classes)
 
 Thanks to the Serializer class, each object can be serializable. I created it because I like saving my objects in key -> value storage systems.
