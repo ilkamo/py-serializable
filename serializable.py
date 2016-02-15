@@ -1,7 +1,16 @@
 import json
 
 class Serializable(object):
-    """Thanks to this class, each object can be serializable."""
+    """
+    Thanks to this class, each object can be serializable.
+    I created it because I like saving my objects in key -> value storage systems.
+    In this way, you can create a class that extends this one in order to obtain
+    a serializable object.
+
+    You can save an object into the database as text using the json_me() method.
+    You can recreate the same object from text using its constructor. 
+    For more info, see the how_to.py file.
+    """
 
     """List of the required class parameters"""
     params = []
