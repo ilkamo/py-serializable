@@ -1,5 +1,6 @@
 from serializable import Serializable
 
+"""To create a class you only need to specify its params"""
 class Photo(Serializable):
 	params = [
 		('service_id', str), 
@@ -8,6 +9,9 @@ class Photo(Serializable):
 		('title', str)
 	]
 
+"""Main"""
+
+"""Instantiate an object"""
 photo = Photo(
 	service_id='flickr', 
 	id=12131, 
@@ -18,6 +22,8 @@ photo = Photo(
 print(photo.json_me())
 print(photo.service_id)
 
+
+"""Instantiate an object"""
 params = {
 	'service_id': 'flickr', 
 	'id': 12131, 
