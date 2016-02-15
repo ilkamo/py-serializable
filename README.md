@@ -1,12 +1,11 @@
 # Python object serializer
-Python serializer class (can be extended by other classes)
+Python serializer class (can be extended by other classes).
 
-Thanks to the Serializable class, each object can be serializable. I created it because I like saving my objects in key -> value storage systems.
-In this way, you can create a class that extends this one in order to obtain a serializable object.
+Thanks to the **Serializable** class, each object can be serialized. I created it because I like saving my objects in **key->value** storage systems. In this way, you can create a class that extends this one in order to obtain a serializable object.
 
 ##Define a serializable object
 
-To define a new serializable object you only need to specify its params and extend the Serializable object. Params can be a list of strings or a list of tuples **(param_name, type)**.
+To define a new serializable object you only need to specify its params and extend the **Serializable** object. Params can be a list of strings or a list of tuples **(param_name, type)**.
 
 ```
 from serializable import Serializable
@@ -53,7 +52,7 @@ photo = Photo(**params)
 ```
 
 ##Attributes
-You can easily access the object attributes
+You can easily access the object attributes.
 
 ```
 from ... import Photo
@@ -67,3 +66,7 @@ photo = Photo(
 
 print(photo.service_id)
 ```
+
+##License
+
+Released under the MIT license.
